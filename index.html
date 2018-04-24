@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Gravity Simulator</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="normalize.css">
+</head>
+
+<body onkeypress="keyPressed(event)">
+    <div id="container">
+		<header id="HeaderInfo">
+			<h2 id="DateInfo"><span id = "DateSimulation"></span></h2>
+            <h2 id="Help">Press H to show keys</h2>
+            <div id="MiscInfo">
+                <h2></h2>
+            </div>
+		</header>
+        <div id="Infos">
+            <section id="SimulationInfo" class="InfoBlock">
+                <ul>
+                    <li>Method 			:<span id="Method"></span></li>
+                    <li>Steps per Frame :<span id="NumberOfSteps"></span></li>
+                    <li>Physics step 	:<span id="PhysicsStep"></span></li>
+                    <li>Total step 		:<span id="Step"></span></li>
+                </ul>
+            </section>
+            <section id="BodyInfo" class="InfoBlock">
+                <h2 id = "BodyName"></h2>
+                <ul>
+                    <li>Mass :<span id = "BodyMass"></span> kg</li>
+                    <li>Radius :<span id = "BodyRadius"></span> m</li>
+                    <li>Orbital Speed :<span id = "BodySpd"></span> m/s</li>
+                    <li>Orbital Arg :<span id = "BodyArg"></span>°</li>
+                    <li>Distance to <span id = "MainBodyName"></span> : <span id="DistanceToMainBody"></span> m</li>
+                    <li>Closest Body : <span id = "ClosestBodyName"></span> (Distance : <span id = "DistanceToClosestBody"></span> m)</li>
+                </ul>
+            </section>
+            <div id="MoreInfo">
+                <h2></h2>
+            </div>
+        </div>
+
+	</div>
+    <script type = "json" src="js/modules/physics/body_colors.json"></script>
+    <script type = "json" src="js/modules/physics/unit_data.json"></script>
+    <script type = "json" src="js/modules/physics/solar_system_data.json"></script>
+    <script src="js/modules/readTextFile.js"></script>
+    <script src="js/modules/physics/physics.js"></script>
+    <script src="js/modules/physics/Body.js"></script>
+    <script src="js/modules/physics/System.js"></script>
+    <script src="js/modules/transpose.js"></script>
+    <script src="js/modules/clone.js"></script>
+    <script src="js/modules/gui.js"></script>
+    <script src="js\three.js-master\build\three.min.js"></script>
+    <script src="js\controls\OrbitControl.js"></script>
+    <script src="js\main.js"></script>
+    <script src="js\controls\OrbitControl.js"></script>
+
+</body>
+
+</html>
