@@ -1,0 +1,17 @@
+{
+  "units" :
+  {
+    "time" : {
+      "year" : 3.154e+7,
+      "month" : 2.628e+6,
+      "day" : 86400,
+      "hour" : 3600,
+      "minute" : 60,
+      "year" : 1
+    },
+    "distance" : {
+      "lightYear" : 9.461e+15,
+      "astronomicUnit" : 1.495978875e+11
+    }
+  }
+}
