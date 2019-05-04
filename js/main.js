@@ -276,7 +276,7 @@ function initState() {
     trajIndex = 0;
     trajLength = 256;
     stellarSystem = new System();
-    readFromJSON('http://localhost:63342/GravitySimulator/js/modules/physics/solar_system_data.json');
+    readFromJSON('https://samibendou.github.io/NBodiesSolver/GravitySimulator/js/modules/physics/solar_system_data.json');
 
 
     pause = true;
